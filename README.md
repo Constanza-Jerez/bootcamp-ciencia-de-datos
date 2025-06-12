@@ -21,8 +21,6 @@ Este repositorio recoge mi aprendizaje en el **Bootcamp de Ciencia de Datos**, o
 | **01** | **Orientación al perfil y metodología**                                           | 🚧 En progreso    |
 | **02** | **Fundamentos de Python para análisis de datos**                                  | 🚧 En progreso    |
 | **03** | **Manejo de Estructuras de Datos con Librerías**                                  | 🚧 En progreso    |
-|        | &nbsp;&nbsp;&nbsp;• S1 – Python básico y NumPy                                     | 🚧 En progreso    |
-|        | &nbsp;&nbsp;&nbsp;• S2 – Pandas y manipulación de DataFrame                        | 🚧 En progreso    |
 | **04** | **Análisis Exploratorio y Visualización de Datos**                                | 🚧 En progreso |
 | **05** | **Inferencia Estadística y Fundamentos de SQL para Data Science**                 | 🚧 En progreso |
 | **06** | **Aprendizaje de Máquina Supervisado (Machine Learning básico)**                  | 🚧 En progreso |

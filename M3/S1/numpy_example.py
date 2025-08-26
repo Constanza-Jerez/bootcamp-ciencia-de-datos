@@ -103,3 +103,7 @@ print(f'matriz_a: {matriz_a}')
  [3 4 5]
  [6 7 8]]
 '''
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> 69ae7667ac6b4bde6a7ba9f3d5a5cb92e2443b41

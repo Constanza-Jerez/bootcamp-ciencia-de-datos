@@ -7,7 +7,8 @@ Este repositorio recoge mi aprendizaje en el **Bootcamp de Ciencia de Datos**, o
 
 ```
 /
-├── M3_ManejoDeEstructurasDeDatosConLibrerias/
+├── M3
+
 │   ├── S1/
 │   └── S2/
 ├── .gitignore
@@ -18,13 +19,13 @@ Este repositorio recoge mi aprendizaje en el **Bootcamp de Ciencia de Datos**, o
 
 | Módulo | Tema                                                                              | Estado         |
 |:------:|:----------------------------------------------------------------------------------|:--------------:|
-| **01** | **Orientación al perfil y metodología**                                           | 🚧 En progreso    |
-| **02** | **Fundamentos de Python para análisis de datos**                                  | 🚧 En progreso    |
-| **03** | **Manejo de Estructuras de Datos con Librerías**                                  | 🚧 En progreso    |
-| **04** | **Análisis Exploratorio y Visualización de Datos**                                | 🚧 En progreso |
-| **05** | **Inferencia Estadística y Fundamentos de SQL para Data Science**                 | 🚧 En progreso |
-| **06** | **Aprendizaje de Máquina Supervisado (Machine Learning básico)**                  | 🚧 En progreso |
-| **07** | **Aprendizaje de Máquina No Supervisado**                                         | 🚧 En progreso |
+| **01** | **Orientación al perfil y metodología**                                           | ✅ Finalizado |
+| **02** | **Fundamentos de Python para análisis de datos**                                  | ✅ Finalizado |
+| **03** | **Manejo de Estructuras de Datos con Librerías**                                  | ✅ Finalizado |
+| **04** | **Análisis Exploratorio y Visualización de Datos**                                | ✅ Finalizado |
+| **05** | **Inferencia Estadística y Fundamentos de SQL para Data Science**                 | ✅ Finalizado |
+| **06** | **Aprendizaje de Máquina Supervisado (Machine Learning básico)**                  | ✅ Finalizado |
+| **07** | **Aprendizaje de Máquina No Supervisado**                                         | ✅ Finalizado |
 | **08** | **Fundamentos de Deep Learning**                                                  | 🚧 En progreso |
 | **09** | **Fundamentos de Big Data**                                                       | 🚧 En progreso |
 | **10** | **Desarrollo de Portafolio para Especialidades**                                  | 🚧 En progreso |

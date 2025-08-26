@@ -1,0 +1,65 @@
+### **Sesión 4: Obtención y Preparación de Datos**
+
+- **¿Qué es un Valor Perdido?**
+    - **Definición**: Datos ausentes en un conjunto de datos.
+    - **Representación en Pandas**: Se representan con **NaN**.
+    - **Causas Comunes**:
+        - Errores en la recolección de datos (ej., sensores defectuosos).
+        - Registros incompletos (campos no ingresados en encuestas).
+        - Conversión de formatos (al importar datos de distintas fuentes).
+        - Eliminación accidental de valores.
+    - **Identificación de Valores Perdidos**:
+        - `isnull()`: Identifica valores nulos.
+        - `notnull()`: Identifica valores no nulos.
+        - `sum()`: Cuenta la cantidad de valores nulos por columna.
+    - **Tratamiento de Valores Perdidos**:
+        - **Eliminación (`dropna()`)**: Si los valores perdidos son pocos y no afectan el análisis.
+            - **Consideraciones**:
+                - `axis=0`: Elimina filas (por defecto).
+                - `axis=1`: Elimina columnas.
+                - `how="any"`: Elimina si hay al menos un NaN en la fila/columna.
+                - `how="all"`: Solo elimina si todas las celdas son NaN.
+        - **Imputación de Datos (`fillna()`)**: Reemplazar los valores perdidos.
+            - **Ejemplos**:
+                - Rellenar con la **media** para datos numéricos.
+                - Rellenar valores de texto (ej., "Desconocido").
+            - **Imputación de Valores Cualitativos**: Usar la **moda** (valor más frecuente).
+
+- **Detección y Filtrado de Outliers (Valores Atípicos)**
+    - **Definición**: Un valor se considera atípico si se encuentra fuera del rango esperado, determinado por el **rango intercuartílico (IQR)**.
+    - **Cálculo del IQR**: `IQR = Q3 - Q1`.
+    - **Rango para Outliers**: Un dato se considera outlier si está fuera de `Q1 - 1.5 × IQR` o `Q3 + 1.5 × IQR`.
+    - **¿Qué son los Cuartiles?**: Valores que dividen un conjunto de datos ordenados en cuatro partes iguales, cada una con aproximadamente el 25% de los datos.
+        - **Primer cuartil (Q1)**: El valor por debajo del cual se encuentra el 25% de los datos (percentil 25).
+        - **Segundo cuartil (Q2)**: La **mediana**, que divide el conjunto en dos mitades, dejando el 50% de los datos por debajo.
+        - **Tercer cuartil (Q3)**: El valor por debajo del cual está el 75% de los datos (percentil 75).
+    - **Ejemplo en Python**: Se utilizan `df.quantile(0.25)` para Q1 y `df.quantile(0.75)` para Q3 para calcular y filtrar.
+
+- **¿Qué es el Data Wrangling?**
+    - **Definición**: Es el proceso de transformar, limpiar y estructurar datos en un formato adecuado para el análisis.
+    - **Principales Tareas**:
+        - **Limpieza de datos**: Eliminación de valores faltantes, duplicados y errores.
+        - **Transformación de datos**: Cambio de formatos, creación de nuevas variables.
+        - **Integración de datos**: Combinación de diferentes fuentes de datos.
+
+- **Técnicas de Manipulación de Datos**:
+    - **Muestreo Aleatorio**: `sample()` para seleccionar registros aleatorios.
+    - **Permutación de la Data**: `np.random.permutation()` para reordenar filas aleatoriamente.
+    - **Ordenamiento**: `sort_values()` para ordenar los datos.
+    - **Detección y Eliminación de Duplicados**:
+        - **Identificación**: `duplicated()`.
+        - **Eliminación**: `drop_duplicates()`.
+    - **Reemplazo de Valores**: `replace()` para sustituir valores específicos o múltiples.
+    - **Discretización y Binning**: Transformar variables continuas en discretas.
+        - `pd.cut()`: Para agrupar valores numéricos en intervalos.
+    - **Aplicación de Funciones y Expresiones Lambda**:
+        - `apply()`: Aplica funciones a los datos de forma eficiente.
+        - **Expresiones lambda**: Funciones anónimas para operaciones rápidas.
+    - **Manipulación de DataFrames**: 
+        - **Agregar Columnas**: `df['Nueva'] = valores`.
+        - **Eliminar Columnas**: `df.drop(columns=['Columna'])`.
+        - **Redimensión**: `melt()`.
+    - **Renombrar y Redefinir Índices**: 
+        - `set_index()`: Define un índice.
+        - `reset_index()`: Restablece el índice original.
+        - `rename()`: Cambia nombres de columnas.
